@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".register"
+    android:id="@+id/register_layout_id"
+    android:background="@drawable/gradient">
+<ScrollView
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="0dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="176dp"
+                android:layout_height="149dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="110dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="38dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/logo" />
+
+            <EditText
+                android:id="@+id/editText_username"
+                android:layout_width="206dp"
+                android:layout_height="48dp"
+                android:layout_alignStart="@+id/editText_password"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="220dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                android:hint="USERNAME"
+                app:fontFamily="@font/swe"
+                android:layout_alignLeft="@+id/editText_password"
+                android:layout_marginLeft="1dp" />
+
+            <EditText
+                android:id="@+id/editText_password"
+                android:layout_width="206dp"
+                android:layout_height="46dp"
+                android:layout_alignStart="@+id/editText_confirm_password"
+                android:layout_alignLeft="@+id/editText_confirm_password"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="280dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                android:hint="PASSWORD"
+                android:inputType="textPassword"
+                app:fontFamily="@font/swe" />
+
+            <EditText
+                android:id="@+id/editText_confirm_password"
+                android:layout_width="214dp"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="336dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                android:hint="CONFIRM PASSWORD"
+                android:inputType="textPassword"
+                android:textSize="15dp"
+                app:fontFamily="@font/swe" />
+
+            <Button
+                android:id="@+id/button_register"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="395dp"
+                android:background="@drawable/button_colour"
+                android:text="REGISTER"
+                android:textColor="@color/white_clr"
+                android:textStyle="bold"
+                app:fontFamily="@font/kaushanscript_regular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_register"
+                android:layout_alignParentStart="true"
+                android:orientation="horizontal"
+                android:textColor="#ffffff"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:text="Already Registered?"
+                    android:textColor="#ffffff"
+                    app:fontFamily="@font/kaushanscript_regular" />
+
+                <TextView
+                    android:id="@+id/textView_register"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:paddingLeft="5dp"
+                    android:text="LOGIN"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/kaushanscript_regular" />
+            </LinearLayout>
+        </RelativeLayout>
+</ScrollView>
+
+</LinearLayout>

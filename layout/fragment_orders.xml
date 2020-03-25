@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/or"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ordersFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="175dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="24dp"
+            android:text="Yours Orders"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            app:fontFamily="@font/kaushanscript_regular"
+            android:textAlignment="center" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete"
+            android:layout_width="398dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/textview1"
+            android:layout_marginBottom="-72dp"
+            android:textColor="@color/white"
+            app:fontFamily="@font/kaushanscript_regular"
+            android:hint="Search all Orders" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="182dp"
+            android:layout_height="42dp"
+            android:layout_alignLeft="@id/autocomplete"
+            android:layout_alignBottom="@id/autocomplete"
+            android:layout_marginLeft="31dp"
+            android:layout_marginBottom="-52dp"
+            app:fontFamily="@font/kaushanscript_regular"
+            android:text="Last 6 Months"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/autocomplete"
+            android:layout_alignBottom="@id/autocomplete"
+            android:layout_marginBottom="-57dp"
+            android:background="@drawable/buttonshape"
+            android:textColor="@color/white"
+            app:fontFamily="@font/kaushanscript_regular"
+            android:text="Filter Orders"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

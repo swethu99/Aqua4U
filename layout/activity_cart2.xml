@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".cart2">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/kaushanscript_regular"
+        android:text="My Cart"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="85dp"
+        android:layout_height="77dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView8"
+        android:scaleType="fitStart"
+        android:src="@drawable/cart"
+        android:layout_toRightOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="207dp"
+        android:layout_height="86dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/kaushanscript_regular"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="207dp"
+        android:layout_height="86dp"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/kaushanscript_regular"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="207dp"
+        android:layout_height="86dp"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/kaushanscript_regular"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/textView7" />
+
+
+
+</RelativeLayout>
